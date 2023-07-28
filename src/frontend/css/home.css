@@ -1,0 +1,159 @@
+.jumbotron {
+  color: #d9a362;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+h4{
+  margin-top: -2rem;
+  color: #bf895a;
+}
+.row {
+  display: flex;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d9a362;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px #d9a362;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  width: 90%;
+  padding: 20px;
+  margin: 0 auto;
+  height: 20rem;
+}
+
+.form-control {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40rem;
+  padding: 10px;
+  border: 1px solid #d9a362;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+.form-control:focus{
+  border: 1px solid #d9a362;
+  box-shadow: 0 2px 4px #d9a362;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #bf895a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.btn-primary:hover {
+  background-color: #c0824b;
+  border: 1px solid #d9a362;
+  box-shadow: 0 2px 4px #d9a362;
+
+
+}
+
+/* Estilos para la información del reloj */
+.content {
+  padding: 20px;
+  border: 2px solid #d9a362;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+}
+
+.cardHome {
+  background-color: #BF895A;
+  background-image: none;
+  
+}
+.cardHome.TextInfo {
+  font-size: 20px;
+  text-align: justify;
+  overflow: hidden; /* Oculta el texto que se desborda */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto es demasiado largo */
+}
+
+.cardHome.materials {
+  font-size: 20px;
+
+}
+
+
+.cardHome.owners {
+  font-size: 18px;
+}
+
+.cardHome.info {
+  font-size: 18px;
+}
+
+.col-md-6 {
+  margin-bottom: 20px;
+}
+
+.scroll-container {
+  max-height: 200px; /* Altura máxima para mostrar el scroll */
+  overflow-y: auto; /* Habilitar el scroll vertical cuando el contenido excede la altura máxima */
+}
+
+@media(max-width : 1150px){
+  .cardHome.TextInfo{
+    font-size: 2vh;
+  }
+}
+@media(max-width : 768px){
+  .form-container{
+    width: 80%;
+    height: 20rem;
+
+   
+  }
+  .form-control{
+    width: 90%;
+  }
+  .btn-primary{
+    width: 50%;
+    height: 3rem;
+  }
+  .cardHome.TextInfo{
+    font-size: 1.2vh;
+    text-align: start;
+  }
+  #text-card{
+    margin-top: 1rem;
+
+  }
+  .cardHome.materials{
+    font-size: 14px;
+  }
+  .cardHome.owners{
+    font-size: 12px;
+  }
+  .cardHome.info{
+    font-size: 12.9px;
+  }
+
+}

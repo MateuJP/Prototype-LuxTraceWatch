@@ -1,0 +1,24 @@
+.form-admin{
+    border: 2px solid #bf895a;
+    padding: 10px;
+}
+.form-admin label{
+    position: relative;
+    margin-top: 5px;
+    color : #D9A362;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.form-admin input{
+    width: 80%;
+    margin-top: 1.5rem;
+}
+.form-admin input:focus {
+    border: 1px solid #d9a362;
+    box-shadow: 0 2px 4px #d9a362;
+}
+
+.form-admin input::placeholder {
+    color: #242326;
+}

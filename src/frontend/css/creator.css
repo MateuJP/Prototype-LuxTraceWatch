@@ -1,0 +1,95 @@
+.container-form-creator {
+  display: block;
+  width: 100%;
+  margin-top: 0rem;
+  justify-content: center;
+}
+
+.form-creator {
+  padding: 10px;
+  margin-top: 2rem;
+  width: 70%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #d9a362;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px #d9a362;
+}
+
+.form-creator-data input {
+  padding: 10px;
+  margin-top: 0.5rem;
+  width: 80%;
+  height: 2.5rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Edu SA Beginner', cursive;
+
+}
+.form-creator-data input:focus {
+  border: 2px solid #d9a362;
+  box-shadow: 0 2px 4px #d9a362;
+}
+.form-creator-data label{
+  font-family: 'Tangerine', serif;
+}
+
+
+.form-creator-files {
+  margin-top: 0rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-creator-files input{
+  margin-top: 0rem;
+  padding: 10px;
+  width: 80%;
+  height: 2.8rem;  
+}
+.form-creator-files input:focus{
+  border: 2px solid #d9a362;
+  box-shadow: 0 2px 4px #d9a362;
+
+}
+.form-creator-files label{
+  font-family: 'Edu SA Beginner', cursive;
+}
+.boton-crear{
+  margin-top: 0.5rem;
+  width: 40%;
+  height: 40px;
+  border-radius: 1rem;
+  background-color: #BF895A;
+  font-family: 'Edu SA Beginner', cursive;
+  border: none;
+  color: white;
+  font-weight: bold;
+} 
+@media (max-width: 1150px) {
+  .container-form-creator{
+      width: 100%;
+  }
+  .form-creator {
+      padding: 1rem;
+      margin-bottom: 2rem;
+      width: 95%;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .form-creator-data label{
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+    }
+    .form-creator-files label{
+      justify-content: center;
+    }
+  
+}

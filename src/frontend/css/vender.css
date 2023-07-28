@@ -1,0 +1,49 @@
+.form-container-transfer {
+    display: flex;
+    flex-direction: column; /* Agregar esta propiedad para apilar los elementos verticalmente */
+    padding: 10px;
+    border: 2px solid #d9a362;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px #d9a362;
+    justify-content: center;
+  }
+  
+.form-control-transfer{
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+ 
+}
+.form-control-transfer:focus{
+    border: 1px solid #d9a362;
+    box-shadow: 0 2px 4px #d9a362;
+
+}
+.btn-transfer{
+    width: 30%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+}
+.label-transfer {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    width: 100%; /* Ancho del label, puede ser 100% para ocupar todo el ancho del contenedor */
+    text-align: center; /* Opcional: centra el texto del label */
+  }
+
+@media(max-width : 768px){
+    .btn-transfer {
+        font-size: 15px;
+        height: 4rem;
+    }
+}
