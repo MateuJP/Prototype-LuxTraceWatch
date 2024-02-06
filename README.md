@@ -17,6 +17,8 @@ Los próximos pasos se centran en continuar mejorando el prototipo, específicam
 - **Búsqueda avanzada:** En el prototipo actual, para buscar un reloj es necesario introducir su número de serie único. En los siguientes incrementos, se pretende implementar un mecanismo basado en etiquetas que permita a los usuarios escanear con sus móviles y obtener directamente la información desde la blockchain.
 
 ## Instalación para desplegar la aplicación en ganache : 
+Para ello, es necesario en el archivo hardhat.config.js comentar la red de Mumbai.
+En el archivo create.js configurar las claves de sesión con la API del proveedor de IPFS que se tenga.
 
 ### 1. Install Dependencies:
 `$ npm install`
@@ -29,6 +31,20 @@ Los próximos pasos se centran en continuar mejorando el prototipo, específicam
 
 ### 4. Migrar los Smart Contracts
 `npx hardhat run src/backend/scripts/deploy.js --network ganache`
+
+### 5. Ejecutar los Tests
+`$ npx hardhat test`
+
+### 6. Lanzar el Frontend
+`$ npm run start`
+
+## Instalación para desplegar la aplicación en Polygon : 
+En el archivo create.js configurar las claves de sesión con la API del proveedor de IPFS que se tenga.
+### 1. Install Dependencies:
+`$ npm install`
+
+### 2. Migrar los Smart Contracts
+`npx hardhat run src/backend/scripts/deploy.js --network mumbai`
 
 ### 5. Ejecutar los Tests
 `$ npx hardhat test`
