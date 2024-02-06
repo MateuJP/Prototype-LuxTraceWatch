@@ -15,3 +15,23 @@ Los próximos pasos se centran en continuar mejorando el prototipo, específicam
 - **Interfaz de usuario:** El prototipo actual cuenta con una interfaz de usuario básica para probar las diferentes opciones. Los siguientes incrementos se enfocarán en fortalecer esta área.
 - **Control de roles:** Se ha implementado un contrato inteligente para gestionar los roles que pueden acceder a secciones específicas de la Dapp. Queda pendiente explorar el control de acceso basado en roles que proporciona OpenZeppelin en el contrato AccessControl.
 - **Búsqueda avanzada:** En el prototipo actual, para buscar un reloj es necesario introducir su número de serie único. En los siguientes incrementos, se pretende implementar un mecanismo basado en etiquetas que permita a los usuarios escanear con sus móviles y obtener directamente la información desde la blockchain.
+
+## Instalación para desplegar la aplicación en ganache : 
+
+### 1. Install Dependencies:
+`$ npm install`
+### 2. Arranque de la Blockchain de desarrollo local, para ello primero hay que descargar Ganache
+`$ npx hardhat node`
+
+### 3. Conectar las cuentas del blockchain de desarrollo a Metamask
+- Copiar la clave privada de las direcciones e importarla a Metamask
+- Conecta tu metamask al hardhat blockchain, 127.0.0.1:8545.
+
+### 4. Migrar los Smart Contracts
+`npx hardhat run src/backend/scripts/deploy.js --network ganache`
+
+### 5. Ejecutar los Tests
+`$ npx hardhat test`
+
+### 6. Lanzar el Frontend
+`$ npm run start`
