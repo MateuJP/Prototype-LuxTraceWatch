@@ -6,7 +6,8 @@ Este prototipo simula la implementación para una compañía de relojes de lujo 
 
 El objetivo de este sistema es permitir que cada reloj cuente su propia historia. Para ello, se genera un NFT que se vincula a cada reloj fabricado por la empresa. En este NFT se registra la historia completa del reloj, desde su fabricación hasta el momento actual, proporcionando a los clientes una forma fiable de verificar la autenticidad de los relojes y registrar la propiedad de los mismos.
 
-El Paper disponible en este mismo GitHub explica qué es LuxTrace a nivel global, los detalles técnicos de la implementación de está solución y realiza un análisis de rendimiento de la Dapp desplegada en Ethereum y en Polygon.
+El Paper disponible en este mismo GitHub explica qué es LuxTrace a nivel global, los detalles técnicos de la implementación de está solución y realiza un análisis de rendimiento de la Dapp desplegada en Ethereum y en Polygon, asi mismo se peude
+consultar el  [siguiente enlace](https://moonlit-cupcake-717850.netlify.app) para ver la página web del proyecto
 
 ## Próximos pasos
 
