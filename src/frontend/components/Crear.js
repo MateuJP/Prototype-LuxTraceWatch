@@ -14,7 +14,7 @@ const Crear = ({ gestion, permisos }) => {
   const [fabricationPlace, setFabricationPlace] = useState('');
   const [image, setImage]=useState('');
   const [video, setVideo]=useState('');
-  const projectId = '2SQDBT82TDPavw2GQJLMJFGBxQ4';
+const projectId = '2SQDBT82TDPavw2GQJLMJFGBxQ4';
 const projectSecret = 'c288ea36ec4ee892dfa7a57cba1dc6df';
 const auth = 'Basic ' + Buffer.from(projectId + ':' + projectSecret).toString('base64');
 const client = ipfsHttpClient({
