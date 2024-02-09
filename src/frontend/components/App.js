@@ -78,9 +78,8 @@ function App() {
 
 
   const getOwner=async()=>{
-    // En caso de usar Ganache, usar este proveedor, si se usa otra red diferente a mumbai y Ganache buscar el proveedor
-    // const provider = new ethers.providers.JsonRpcProvider('http://127.0.0.1:7545');
-    const provider =new ethers.providers.JsonRpcProvider('https://polygon-mumbai.infura.io/v3/a65fad5a367043fdb9f43345642f30de');
+    // En caso de usar Ganache, usar este proveedor, si se usa otra red diferente, se tiene que buscar el proveedor para esa red
+    const provider = new ethers.providers.JsonRpcProvider('http://127.0.0.1:7545');
     setProvider(provider);
     const gestion=new ethers.Contract(GestionAddress.address,GestionAbi.abi,provider);
     setGestion(gestion);
